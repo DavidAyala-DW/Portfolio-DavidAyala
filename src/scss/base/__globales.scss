@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    scroll-behavior: smooth;
+}
+
+img, picture {
+    width: 100%;
+    display: block;
+}
+h1 , h2 , h3 , h4, p{
+    color: black;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+svg{
+
+    height: 5rem;;
+    width:5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;  
+
+    cursor:pointer;
+
+}

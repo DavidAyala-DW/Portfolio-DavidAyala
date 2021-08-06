@@ -1,0 +1,48 @@
+.new_proyect{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 2rem;
+    @include tablet(){
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+        padding:0 2rem;
+    }
+    background-color: $blue;
+    border-radius: 2rem;
+    
+    h2,p{
+        color: white;
+    }
+    img{
+        border-radius: 1rem;
+        margin: 1rem auto;
+    }
+    .info_text{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        a{
+            width: max-content;
+            div{
+                background-color: white;
+                border-radius: 1rem;
+                padding: 1rem 3rem;
+                display: flex;
+                p{
+                    color: $blue;
+                }
+                svg{
+                    height: 3rem;
+                    width: 3rem;
+                    filter: invert(0);
+                    margin-left: 1rem;
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}

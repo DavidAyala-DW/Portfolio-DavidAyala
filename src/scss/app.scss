@@ -1,0 +1,26 @@
+@import "base/_normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;300;400;500;700&display=swap');
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_globales.scss";
+@import "base/_helpers.scss";
+@import "layout/_darkmode.scss";
+
+//Layout 
+
+@import "layout/__body.scss";
+@import "layout/_nav-bar.scss";
+@import "layout/_main.scss";
+@import "layout/_aboutMe.scss";
+@import "layout/_skills.scss";
+@import "layout/_qualification.scss";
+@import "layout/_services.scss";
+@import "layout/_portfolio.scss";
+@import "layout/_newProyect.scss";
+@import "layout/_testimonial.scss";
+@import "layout/_contactMe.scss";
+@import "layout/_footer.scss";
+@import "layout/_menu_bar.scss";
+@import "layout/_form.scss";
+@import "layout/_spinner.scss";
