@@ -16,7 +16,9 @@
     "cssnano": "^5.0.6",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
-    "gulp-sourcemaps": "^3.0.0"
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.0.9"
   }
 }

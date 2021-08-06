@@ -3,6 +3,9 @@ const sass = require('gulp-dart-sass');
 const autoprefixer = require('autoprefixer');
 const postcss    = require('gulp-postcss')
 const sourcemaps = require('gulp-sourcemaps')
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const webp = require('gulp-webp');
 const cssnano = require('cssnano');
 
 
