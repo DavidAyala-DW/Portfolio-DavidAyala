@@ -1,0 +1,113 @@
+.contactMe{
+    padding: 1rem;
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        max-width: 100%;
+        @include desktop(){
+            max-width: 60rem;
+            position:relative;
+        }
+        .info_contact{
+            word-break: break-word;
+            h2,p{
+                color: white;
+            }   
+            width: 100%;
+            @include desktop(){
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: calc(100% + 5rem);
+                right: 0;
+                margin: auto 0;
+                width: max-content;
+            }
+            height: max-content;
+            background-color: $blue;
+            padding: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 2rem;
+            gap:1rem;
+
+            .email,.callme,.location,.time{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                svg{
+                    filter: invert(0);
+                    stroke: white;
+                }
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .form_container{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0;
+            @include tablet(){
+                padding: 2rem;
+            }
+            .head_form{
+                padding: 1rem;
+            }
+            .form_contact{
+                margin-bottom: 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                padding: 1rem;
+                input,.fake_message{
+                    outline: unset;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    background-color: white;
+                    padding: 1rem;
+                    font-size: 2rem;
+                    -webkit-box-shadow: 5px 5px 15px -8px #000000; 
+                    box-shadow: 5px 5px 15px -8px #000000;
+    
+                }
+                .submit_input{
+                    color: white;
+                    background-color: $blue;
+                    padding: 1.5rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+}
+.fake_message{
+    position: relative;
+    max-height: 20rem;
+    overflow-y: scroll;
+    cursor:text;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &:empty::before{
+        padding: 1rem;
+        bottom: 0;
+        content: "Agrega un comentario publico...";
+        color: rgb(0,0,0,.7);
+        font-size: 2rem;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

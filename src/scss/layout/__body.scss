@@ -1,0 +1,6 @@
+body{
+    @include tablet(){
+        padding-top: 12rem;
+    }
+    font-family: $body;
+}

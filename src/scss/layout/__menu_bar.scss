@@ -1,0 +1,72 @@
+.menu{
+    z-index: 99;
+    position: fixed;
+    height: auto;
+    @include m-phone{
+        bottom: 0;
+        width: 100vw;
+        .bar_menu{
+            transition: all 0.1s ease-in-out;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            -webkit-box-shadow: -1px -10px 14px -9px #000000; 
+            box-shadow: -1px -10px 14px -9px #000000;
+            position: relative;
+            svg{
+                height: 3rem;
+                width:3rem;
+                filter :invert(0);
+                stroke: $blue;
+            }
+            .icons_menu{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                div{
+                    height: 3rem;
+                    width:3rem;
+                }
+            }
+            .deploy_menu{
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: white;
+                }
+                .nav_menu{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 5rem;
+                    row-gap: 2rem;
+                    padding: 2rem;
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        svg{
+                            stroke: white;
+                        }
+                    }
+                }
+                .close_menu{
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+}
+.show_menu{
+    background-color: $blue;
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+.h-25_p-0{
+    height: 25rem;
+    padding: 0!important;
+}

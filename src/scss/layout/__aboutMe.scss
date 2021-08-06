@@ -1,0 +1,51 @@
+.about_me{
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include tablet(){
+            margin: 5rem;
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            column-gap: 5rem;
+        }
+        .info_image{
+
+            img{
+                border-radius: 3rem;
+            }
+
+        }
+    
+        .info_text{
+            padding: 1rem;
+            .experience{
+
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                div{    
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+            .button{
+                background-color: $blue;
+                padding:1rem 3rem;
+                border-radius:2rem;
+                p{
+                    color: white;
+                }
+                svg{
+                    filter: invert(1);
+                    margin-left: 1rem;
+                }
+            }
+        }   
+
+    }
+
+}
